@@ -38,7 +38,7 @@ step-6 to know the location of spec files give the location into test runner fil
 -go to config file,in e2e section add this information: { 
     specPattern: 'cypress/integration/Assignment/*.js'
                         },
--now in cypress test runner we got our Signup_loginSpec1.js file
+-now in cypress test runner we got our both spec files
                     
 step-7
 -install cypress-mochawesome-reporter
