@@ -53,5 +53,6 @@ e2e: {
 step-8
 -register those event in the support e2e.js file
 import 'cypress-mochawesome-reporter/register';
-viewing report link
+
+For Reviewing the report click on below link
 C:\Users\sonal.agrawal\CypressAutomation\cypress\reports\html\index.html
