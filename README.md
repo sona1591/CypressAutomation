@@ -1,7 +1,7 @@
 ### Notes:
 
-Before setting up the project, I have installed following:
-
+Before setting up the project, I have installed following:                                                                                                              
+##Setup                                                                                                                                                                      
 step-1
 node.js>>To execute java script code, we should have java script runtime environrnt in our system.and 
 node.js is an open source,cross platform runtime environrnt which is useful for run our javascript code.
@@ -24,23 +24,27 @@ step-3
 -cypress version entry got created in pakage.json("cypress": "^13.7.0")
 -npm install(for Installing the dependencies)
 
-step-4
--To run the tests using Cypress, follow these steps:
+ ##Test Structure                                                                                                                                                    
+    -'integeation/Assignment': Contains all test files                                                                                                                        
+    -'support/':contains custom command and utility function
 
+##Running test                                                                                                                                                               
+step-1                                                                                                                                                                       
+To run the tests using Cypress, follow these steps:                                                                                                                  
 -Open Cypress Test Runner:node_modules/.bin/cypress open
 -cypress dashboard will open>>select end to end testing module
 -added configuration files to our project
 -cypress folder got cread in visual studio
 
-step-5 Inside Cypress folder>>created integration>> subfolder Assignment>>spec files inside this with .js extension
+step-2 Inside Cypress folder>>created integration>> subfolder Assignment>>spec files inside this with .js extension
 
-step-6 to know the location of spec files give the location into test runner file
+step-3 to know the location of spec files give the location into test runner file                                                                                          
 -go to config file,in e2e section add this information: { 
     specPattern: 'cypress/integration/Assignment/*.js'
                         },
 -now in cypress test runner we got our both spec files
-                    
-step-7
+
+step-4                                                                                                                                                                      
 -install cypress-mochawesome-reporter
 npm i --save-dev cypress-mochawesome-reporter
 
@@ -50,10 +54,12 @@ e2e: {
       require('cypress-mochawesome-reporter/plugin')(on);
     },
 
-step-8
+step-5                                                                                                                                                                      
 -register those event in the support e2e.js file
 import 'cypress-mochawesome-reporter/register';
 
 For Reviewing the report copy the below link and paste it in a browser 
 
 C:\Users\sonal.agrawal\CypressAutomation\cypress\reports\html\index.html
+
+
